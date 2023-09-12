@@ -13,38 +13,67 @@ namespace csharp_calcolatrice
             double numberDouble2 = 656.5;
 
             //SUMM
-            Console.WriteLine(MathHelper.NumberSumm(numberInt, numberInt2));
-            Console.WriteLine(MathHelper.NumberSumm(numberDouble, numberDouble2));
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("SOMMA");
+            Console.WriteLine(MathHelper.NumberSumm<int>(numberInt, numberInt2));
+            Console.WriteLine(MathHelper.NumberSumm<double>(numberDouble, numberDouble2));
+            Console.WriteLine("-----------------------------------------");
+
 
             //DIFFERENCE
-            Console.WriteLine(MathHelper.NumberDiff(numberInt, numberInt2));
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("DIFFERENZA");
+            Console.WriteLine(MathHelper.NumberDiff<int>(numberInt, numberInt2));
             Console.WriteLine(MathHelper.NumberDiff(numberDouble, numberDouble2));
+            Console.WriteLine("-----------------------------------------");
+
 
             //MULTIPLICATION
-            Console.WriteLine(MathHelper.NumberMultiplier(numberInt, numberInt2));
-            Console.WriteLine(MathHelper.NumberMultiplier(numberDouble, numberDouble2));
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("MOLTIPLICAZION");
+            Console.WriteLine(MathHelper.NumberMultiplier<int>(numberInt, numberInt2));
+            Console.WriteLine(MathHelper.NumberMultiplier<double>(numberDouble, numberDouble2));
+            Console.WriteLine("-----------------------------------------");
 
-            ////ABSOLUTE
-            Console.WriteLine(MathHelper.NumberAbsolute(numberInt));
-            Console.WriteLine(MathHelper.NumberAbsolute(numberDouble));
-
-            ////MINOR NUMBER
-            Console.WriteLine(MathHelper.NumberMinor(numberInt, numberInt2));
-            Console.WriteLine(MathHelper.NumberMinor(numberDouble, numberDouble2));
-
-            ////MAX NUMBER
-            Console.WriteLine(MathHelper.NumberMax(numberInt, numberInt2));
-            Console.WriteLine(MathHelper.NumberMax(numberDouble, numberDouble2));
+            //ABSOLUTE
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("VALORE ASSOLUTO");
+            Console.WriteLine(MathHelper.NumberAbsolute<int>(-24));
+            Console.WriteLine(MathHelper.NumberAbsolute<double>(-22.451));
+            Console.WriteLine("-----------------------------------------");
 
 
-            Console.WriteLine(MathHelper.NumberPower(3,2));
+
+            //MINOR NUMBER
+
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("MINORE");
+            Console.WriteLine(MathHelper.NumberMinor<int>(numberInt, numberInt2));
+            Console.WriteLine(MathHelper.NumberMinor<double>(numberDouble, numberDouble2));
+
+            //MAX NUMBER
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------");
+            Console.WriteLine("MAGGIORE");
+            Console.WriteLine(MathHelper.NumberMax<int>(numberInt, numberInt2));
+            Console.WriteLine(MathHelper.NumberMax<double>(numberDouble, numberDouble2));
+            Console.WriteLine("-----------------------------------------");
+
+
+
+
+
+            Console.WriteLine(MathHelper.NumberPower(3, 2));
+            Console.WriteLine(MathHelper.NumberPower(3, -2));
 
             Console.WriteLine(MathHelper.NumberPower(3, 0));
 
             Console.WriteLine(MathHelper.NumberPower(0, 4));
             Console.WriteLine(MathHelper.NumberPower(0, 0));
-
-
 
         }
     }
