@@ -36,6 +36,16 @@ namespace csharp_calcolatrice
             Console.WriteLine(MathHelper.NumberMax(numberInt, numberInt2));
             Console.WriteLine(MathHelper.NumberMax(numberDouble, numberDouble2));
 
+
+            Console.WriteLine(MathHelper.NumberPower(3,2));
+
+            Console.WriteLine(MathHelper.NumberPower(3, 0));
+
+            Console.WriteLine(MathHelper.NumberPower(0, 4));
+            Console.WriteLine(MathHelper.NumberPower(0, 0));
+
+
+
         }
     }
 }

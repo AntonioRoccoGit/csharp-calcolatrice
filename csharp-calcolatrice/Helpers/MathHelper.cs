@@ -48,5 +48,28 @@ namespace csharp_calcolatrice.Helpers
                 return number1;
             return number2;
         }
+
+        /**
+         * Aggiungete il metodo per l’elevamento a potenza che prende come parametri due numeri interi (base ed esponente) e ritorna la base elevata all’esponente.
+         */
+
+        public static double NumberPower(double baseNumber, double power)
+        {
+            if(baseNumber == 0 && power == 0)
+                return 1;
+
+            if(baseNumber == 0)
+                return 0;
+
+            if(power == 0)
+                return 1;
+
+
+            for (int i = 1; i < power; i++)
+            {
+                baseNumber *= baseNumber;
+            }
+            return baseNumber;
+        }
     }
 }
