@@ -9,65 +9,40 @@ namespace csharp_calcolatrice.Helpers
     public static class MathHelper
     {
 
+        /**
+         * Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica 
+         * uno dei principi di programmazione ad oggetti che abbiamo visto...Quale?
+         * 
+         * L'ereditarietà, perche il type int è compreso nel type double 
+         */
 
-        //INT FUNCTION
-
-        public static int IntSumm(int number1, int number2) 
+        public static double NumberSumm(double number1, double number2)
         {
             return number1 + number2;
         }
-        
-        public static int IntDiff(int number1, int number2)
+
+        public static double NumberDiff(double number1, double number2)
         {
             return number1 - number2;
         }
-        public static int IntMultiplier(int number1, int number2)
+
+        public static double NumberMultiplier(double number1, double number2)
         {
             return number1 * number2;
         }
-        public static   int IntAbsolute(int number1)
+        public static double NumberAbsolute(double number1)
         {
-            return Math.Abs(number1);
-        }
-        public static int IntMinor(int number1, int number2)
-        {
-            if(number1 < number2)
-                return number1;
-            return number2;
-        }
-        public static int IntMax(int number1, int number2)
-        {
-            if (number1 > number2)
-                return number1;
-            return number2;
-        }
-        
+                return Math.Abs(number1);
 
-        //DOUBLE FUNCTION
-
-        public static double DoubleSumm(double number1, double number2)
-        {
-            return number1 + number2;
         }
-        public static double DoubleDiff(double number1, double number2)
+        public static double NumberMinor(double number1, double number2)
         {
-            return number1 - number2;
-        }
-        public static double DoubleMultiplier(double number1, double number2)
-        {
-            return number1 * number2;
-        }
-        public static double DoubleAbsolute(double number1)
-        {
-            return Math.Abs(number1);
-        }
-        public static double DoubleMinor(double number1, double number2)
-        {
+           
             if (number1 < number2)
                 return number1;
             return number2;
         }
-        public static double DoubleMax(double number1, double number2)
+        public static double NumberMax(double number1, double number2)
         {
             if (number1 > number2)
                 return number1;

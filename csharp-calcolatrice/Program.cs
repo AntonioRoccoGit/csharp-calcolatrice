@@ -6,29 +6,35 @@ namespace csharp_calcolatrice
     {
         static void Main(string[] args)
         {
+            int numberInt = 6;
+            int numberInt2 = 4;
+
+            double numberDouble = 4.832656446548;
+            double numberDouble2 = 656.5;
+
             //SUMM
-            Console.WriteLine(MathHelper.IntSumm(4, 6));
-            Console.WriteLine(MathHelper.DoubleSumm(4.832656446548, 4564654656.5));
+            Console.WriteLine(MathHelper.NumberSumm(numberInt, numberInt2));
+            Console.WriteLine(MathHelper.NumberSumm(numberDouble, numberDouble2));
 
             //DIFFERENCE
-            Console.WriteLine(MathHelper.IntDiff(6,8));
-            Console.WriteLine(MathHelper.DoubleDiff(6.1567,8.9665));
+            Console.WriteLine(MathHelper.NumberDiff(numberInt, numberInt2));
+            Console.WriteLine(MathHelper.NumberDiff(numberDouble, numberDouble2));
 
             //MULTIPLICATION
-            Console.WriteLine(MathHelper.IntMultiplier(3,8));
-            Console.WriteLine(MathHelper.DoubleMultiplier(3.65,4.21));
+            Console.WriteLine(MathHelper.NumberMultiplier(numberInt, numberInt2));
+            Console.WriteLine(MathHelper.NumberMultiplier(numberDouble, numberDouble2));
 
-            //ABSOLUTE
-            Console.WriteLine(MathHelper.IntAbsolute(-6));
-            Console.WriteLine(MathHelper.DoubleAbsolute(-42.12));
+            ////ABSOLUTE
+            Console.WriteLine(MathHelper.NumberAbsolute(numberInt));
+            Console.WriteLine(MathHelper.NumberAbsolute(numberDouble));
 
-            //MINOR NUMBER
-            Console.WriteLine(MathHelper.IntMinor(12,6));
-            Console.WriteLine(MathHelper.DoubleMinor(10.22,10.65));
+            ////MINOR NUMBER
+            Console.WriteLine(MathHelper.NumberMinor(numberInt, numberInt2));
+            Console.WriteLine(MathHelper.NumberMinor(numberDouble, numberDouble2));
 
-            //MAX NUMBER
-            Console.WriteLine(MathHelper.IntMax(12, 6));
-            Console.WriteLine(MathHelper.DoubleMax(10.22, 10.65));
+            ////MAX NUMBER
+            Console.WriteLine(MathHelper.NumberMax(numberInt, numberInt2));
+            Console.WriteLine(MathHelper.NumberMax(numberDouble, numberDouble2));
 
         }
     }
